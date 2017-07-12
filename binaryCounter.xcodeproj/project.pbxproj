@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3B6493DE1F15F26700E4F93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6493DD1F15F26700E4F93E /* AppDelegate.swift */; };
-		3B6493E01F15F26700E4F93E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6493DF1F15F26700E4F93E /* ViewController.swift */; };
 		3B6493E31F15F26700E4F93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6493E11F15F26700E4F93E /* Main.storyboard */; };
 		3B6493E51F15F26700E4F93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6493E41F15F26700E4F93E /* Assets.xcassets */; };
 		3B6493E81F15F26700E4F93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6493E61F15F26700E4F93E /* LaunchScreen.storyboard */; };
 		3B6493F31F15F26800E4F93E /* binaryCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6493F21F15F26800E4F93E /* binaryCounterTests.swift */; };
 		3B6493FE1F15F26800E4F93E /* binaryCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6493FD1F15F26800E4F93E /* binaryCounterUITests.swift */; };
+		3B64940C1F16B1FC00E4F93E /* CustomCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64940B1F16B1FC00E4F93E /* CustomCellsViewController.swift */; };
+		3B64940E1F16B81200E4F93E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64940D1F16B81200E4F93E /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		3B6493DA1F15F26700E4F93E /* binaryCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = binaryCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6493DD1F15F26700E4F93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B6493DF1F15F26700E4F93E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B6493E21F15F26700E4F93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B6493E41F15F26700E4F93E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B6493E71F15F26700E4F93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		3B6493F91F15F26800E4F93E /* binaryCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = binaryCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6493FD1F15F26800E4F93E /* binaryCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binaryCounterUITests.swift; sourceTree = "<group>"; };
 		3B6493FF1F15F26800E4F93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B64940B1F16B1FC00E4F93E /* CustomCellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellsViewController.swift; sourceTree = "<group>"; };
+		3B64940D1F16B81200E4F93E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				3B6493DD1F15F26700E4F93E /* AppDelegate.swift */,
-				3B6493DF1F15F26700E4F93E /* ViewController.swift */,
 				3B6493E11F15F26700E4F93E /* Main.storyboard */,
 				3B6493E41F15F26700E4F93E /* Assets.xcassets */,
 				3B6493E61F15F26700E4F93E /* LaunchScreen.storyboard */,
 				3B6493E91F15F26700E4F93E /* Info.plist */,
+				3B64940B1F16B1FC00E4F93E /* CustomCellsViewController.swift */,
+				3B64940D1F16B81200E4F93E /* CustomCell.swift */,
 			);
 			path = binaryCounter;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					3B6493D91F15F26700E4F93E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MWZG5D74NN;
 						ProvisioningStyle = Automatic;
 					};
 					3B6493ED1F15F26800E4F93E = {
@@ -259,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B6493E01F15F26700E4F93E /* ViewController.swift in Sources */,
 				3B6493DE1F15F26700E4F93E /* AppDelegate.swift in Sources */,
+				3B64940E1F16B81200E4F93E /* CustomCell.swift in Sources */,
+				3B64940C1F16B1FC00E4F93E /* CustomCellsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +419,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MWZG5D74NN;
 				INFOPLIST_FILE = binaryCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.binaryCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,9 +432,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MWZG5D74NN;
 				INFOPLIST_FILE = binaryCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.binaryCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -507,6 +514,7 @@
 				3B6494041F15F26800E4F93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6494051F15F26800E4F93E /* Build configuration list for PBXNativeTarget "binaryCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +523,7 @@
 				3B6494071F15F26800E4F93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6494081F15F26800E4F93E /* Build configuration list for PBXNativeTarget "binaryCounterUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +532,7 @@
 				3B64940A1F15F26800E4F93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
