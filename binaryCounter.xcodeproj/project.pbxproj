@@ -15,6 +15,7 @@
 		3B6493FE1F15F26800E4F93E /* binaryCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6493FD1F15F26800E4F93E /* binaryCounterUITests.swift */; };
 		3B64940C1F16B1FC00E4F93E /* CustomCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64940B1F16B1FC00E4F93E /* CustomCellsViewController.swift */; };
 		3B64940E1F16B81200E4F93E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64940D1F16B81200E4F93E /* CustomCell.swift */; };
+		3B6494101F16CEDE00E4F93E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64940F1F16CEDE00E4F93E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3B6493FF1F15F26800E4F93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B64940B1F16B1FC00E4F93E /* CustomCellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellsViewController.swift; sourceTree = "<group>"; };
 		3B64940D1F16B81200E4F93E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3B64940F1F16CEDE00E4F93E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3B6493E91F15F26700E4F93E /* Info.plist */,
 				3B64940B1F16B1FC00E4F93E /* CustomCellsViewController.swift */,
 				3B64940D1F16B81200E4F93E /* CustomCell.swift */,
+				3B64940F1F16CEDE00E4F93E /* ViewController.swift */,
 			);
 			path = binaryCounter;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				3B6493DE1F15F26700E4F93E /* AppDelegate.swift in Sources */,
 				3B64940E1F16B81200E4F93E /* CustomCell.swift in Sources */,
+				3B6494101F16CEDE00E4F93E /* ViewController.swift in Sources */,
 				3B64940C1F16B1FC00E4F93E /* CustomCellsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

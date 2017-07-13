@@ -7,11 +7,26 @@
 //
 
 import UIKit
-class CustomCell: UITableViewCell {
-    
-    @IBOutlet weak var addButton: UIButton!
-   
-    @IBOutlet weak var minusButton: UIButton!
 
-    @IBOutlet weak var middleLabel: UILabel!
+protocol CustomCellDelegate: class {
+    func addNum(by controller: CustomCell, with num:Int)
+    func minusNum(by controller: CustomCell, with num: Int)
+    
 }
+
+class CustomCell: UITableViewCell {
+    weak var delegate: CustomCellDelegate?
+    @IBOutlet weak var middleLabel: UILabel!
+    @IBAction func addButtonPressed(_ sender: Any) {
+//        let indexPath = sender as! NSIndexPath
+        let num = Int(middleLabel.text!)
+        delegate?.addNum(by: self, with: num!)
+
+    }
+    
+    @IBAction func minusButtonPressed(_ sender: Any) {
+        let num = Int(middleLabel.text!)
+        delegate?.minusNum(by: self, with: num!)
+    }
+}
+
